@@ -7,6 +7,7 @@ const generateToken = (user) => {
     expiresIn: "7d",
   });
 };
+console.log("JWT_SECRET:", process.env.JWT_SECRET);
 
 // 🔹 Register User (Email/Password)
 export const registerUser = async (req, res) => {
